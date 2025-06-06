@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Website</title>
+    <style>
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            margin-right: 40px;
+        }
+
+        .text-area {
+            max-width: 500px;
+        }
+
+        .text-area h2 {
+            color:yellow;
+            font-family:  sans-serif;
+           font-size: 40px;
+        }
+
+        .text-area p {
+           font-size: 1.2rem;
+            color :rgb(14, 230, 212);
+            font-family: sans-serif;
+        }
+
+        .text-decription {
+            font-size: 1rem;
+            color: black;
+            font-family: sans-serif;
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            
+        }
+        #name {
+            color: red;
+            font-weight: bold;
+        }
+        #education {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            color:rgb(0, 255, 195);
+            font-size: 50 px;
+        }
+        #edu{
+            text-align: center;
+            color:yellow;
+            font-size: 40px;
+            font-family: sans-serif;
+             line-height: 2;
+        }
+        #education th, #education td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+              margin-bottom: 20px;
+        }
+        #strength-list{
+            list-style-type: none;
+            padding: 0;
+            color:rgb(0, 128, 122);
+            font-size: 20px;
+            font-family: sans-serif;
+            text-align: center;
+            line-height: 2;
+          
+        }
+        .footer {
+            background-color: rgb(13, 3, 34);
+             color:rgb(0, 255, 162);
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            font-size: 40px;  
+            height: 180px;
+            font-family: sans-serif;
+        }
+        .submit {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+          
+        }
+        .submit:hover {
+            background-color: rgb(0, 123, 139);
+        }
+        .submit-btn {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin: 20px auto;
+        }
+       .go-to,p{
+        text-align: center;
+        font-size: 20px;
+        color: rgb(0, 255, 162);
+       }
+       #text{
+        line-height: 3;
+       }
+        
+
+    </style>
+</head>
+<body>
+    <div class="header">Welcome To My Portfolio Website</div>
+    <div class="container">
+        <img src="Samimpic.jpg" alt="Profile Picture" class="profile-pic">
+        
+        <div class="text-area">
+            <h2>Associate Software Developer </h2>,<BR>
+            <p>I am  <span id="name"> MD Samim Akhtar</span>. I am a passionate MCA student with interests in web development and technology. I love learning new things and building creative projects.</p><br>
+            <P class="text-decription"> 
+I am currently pursuing my Master's in Computer Applications (MCA) and have a keen interest in software development, particularly in web technologies. I enjoy coding, problem-solving, and creating innovative solutions that can make a difference.<br>
+            <P class="text-decription">I am always eager to learn new skills and technologies, and I believe in continuous improvement. My goal is to become a proficient software developer and contribute to exciting projects that can impact the world positively.</P>
+            <P class="text-decription"><br>
+                <button class="submit">Download cv</button>
+            </P>
+        </div>
+    </div>
+    <div class="Education">
+      <h1 id="edu"> Qualification</h1>
+      <table id="education" border="1" >
+        <thead>
+          <tr>
+            <th>Degree</th>
+            <th>Institute</th>
+            <th>Year</th>
+            <th>Percentage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MCA</td>
+            <td>Srusti Academy of Management and Technology</td>
+            <td>2026</td>
+            <td>85%</td>
+          </tr>
+          <tr>
+            <td>BSC</td>
+            <td>Utkal University od ,Odisha </td>
+            <td>2023</td>
+            <td>80%</td>
+          </tr>
+          <tr>
+            <td>12th</td>
+            <td>Council of Higher Secondary School</td>
+            <td>2020</td>
+            <td>88%</td>
+            <br>
+            <br>
+          </tr>
+      
+        </tbody>
+      </table>
+     
+    </div>
+    <div class="Skills">
+        <h1 id="edu"> Technical Skills</h1>
+        <p>Here are some of my technical skills:</p>
+        <p id="text">I have a strong foundation in programming languages such as Java, Python, and JavaScript. I am also proficient in web development technologies like HTML, CSS, and React.js. Additionally, I have experience with database management systems like MySQL and MongoDB, and I am familiar with version control systems like Git and GitHub.</p>
+        <p>My skills also include problem-solving and analytical abilities, which help me tackle complex challenges effectively. I am a team player and believe in the power of collaboration to achieve common goals.</p>
+        <!-- <ul id="strength-list">
+            <li>Programming Languages: Java, Python, JavaScript</li>
+            <li>Web Development: HTML, CSS, React.js</li>
+            <li>Database Management: MySQL, MongoDB</li>
+            <li>Version Control: Git, GitHub</li>
+            <li>Problem Solving and Analytical Skills</li>
+            <li>Team Collaboration and Communication</li>
+        </ul> -->
+  
+    <div class="Strength">
+        <br>
+        <br>
+        <h1 id="edu">Strength</h1>
+        <ul id="strength-list">
+            <li>Proficient in programming languages such as Java, Python, and JavaScript</li>
+            <li>Strong problem-solving skills</li>
+            <li>Adaptability and quick learning</li>
+            <li>Effective communication skills</li>
+            <li>Team player with leadership qualities</li>
+            <li>Attention to detail and quality</li>
+            <br>
+        </ul>
+        
+    </div>
+    
+    <div class="weakness">
+        <h1 id="edu">Weakness</h1>
+        <ul id="strength-list">
+            <li>Perfectionism, which can lead to overthinking</li>
+            <li>Difficulty in saying no to additional tasks</li>
+            <li>Tendency to take on too much responsibility</li>
+            <li>Occasional procrastination under pressure</li>
+            <li>Need for continuous improvement in time management</li>
+        </ul>
+    </div>
+
+     <a href="bill.html" class="go-to">
+        <p>Generate Bill</a> </p>
+
+  </body>
+</html>
